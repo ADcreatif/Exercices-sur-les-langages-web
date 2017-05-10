@@ -1,0 +1,27 @@
+<?php  
+
+
+if(array_key_exists('submit', $_GET)){
+	echo	$_GET['submit'];
+}
+
+?>
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Trop Stroumpfette</title>
+		<link rel="icon" href="favicon.ico" />
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.php" data-href="home">Accueil</a>
+				<a href="about" data-href="about">A propos</a>
+				<a href="contact" data-href="contact">Contact</a>
+			</nav>
+		</header>
+		<main>

@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# monsite.com/page   -> monsite.com/index.php/page
+# RewriteRule ^source$ resultat [flag]
+# ^ symbolise le début d'une chaine
+# $ symbolise la fin d'une chaine
+# ? n = 0 ou 1
+# + n = 1 ou une infinité
+# * n = 0 ou une infinité
+# -  signifie une portée comme 0-9 = tous les nombres de 0 à 9
+
+RewriteRule ^([a-z]*)$ index.php?page=$1 [NC]
