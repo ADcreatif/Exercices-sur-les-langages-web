@@ -2,8 +2,13 @@
 <h1>Formulaire de contact</h1>
 
 <form>
-	<label>Votre nom : 
-		<input type="text" name="name" >
-	</label>
-	<input type="submit" name="submit" value="envoyer">
+	<ul>
+        <li><label>Votre nom : <input id="name" type="text" name="name" ></label></li>
+        <li><label>Votre message :<textarea id="message" name="message"></textarea></label></li>
+        <li><input type="submit" name="submit" value="envoyer"></li>
+    </ul>
 </form>
+
+<script>
+    tinymce.init({ selector:'textarea' });
+</script>
