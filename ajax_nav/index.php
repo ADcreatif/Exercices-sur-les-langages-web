@@ -6,6 +6,4 @@ if(array_key_exists('page', $_GET)){
 	$template =  'pages/home.phtml';
 }
 
-
-
 include 'pages/layout.php';
