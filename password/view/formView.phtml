@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maitrisez vos mots de passe</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <h1>Maitrisez vos mots de passe</h1>
+    </header>
+    <main>
+        <?php if(!empty($errors)): ?>
+            <aside>
+                <p><?= $errors ?></p>
+            </aside>
+        <?php endif ?>
+
+        <form method="POST">
+            <input type="text" name="pseudo" placeholder="pseudo">
+            <input type="password" name="pass" placeholder="pass">
+            <input type="submit" name="login" value="connexion">
+        </form>
+
+    </main>
+</body>
+</html>
+
+
