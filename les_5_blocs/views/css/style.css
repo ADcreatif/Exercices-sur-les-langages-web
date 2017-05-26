@@ -55,6 +55,9 @@ nav a{ padding:1rem}
     transition:top 1s, background-color 500ms, opacity 500ms;
 }
 
+.pair{
+    background-color: #eeeeee;
+}
 
 /* responsive */
 @media screen and (max-width: 720px){

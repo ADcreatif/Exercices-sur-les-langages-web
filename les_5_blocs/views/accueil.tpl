@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Les 5 langages</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
+{extends "layout.tpl"}
 
-<!-- En-tête -->
-<header>
-    <h1>Les 5 langages</h1>
-    <span data-time>test</span>
-    <nav>
-        <a href="/" title="">Accueil</a>
-        <a href="contact.php" title="">A propos</a>
-        <a href="contact.php" title="">Contact</a>
-    </nav>
-</header>
-<!-- # En-tête -->
+{block name="title"}Accueil{/block}
 
-<!-- Contenu principal -->
+{block name="main"}
 <main>
+    <h2>Page d'accueil</h2>
     <article id="broccoli" style="color:green" class="poil" title="un titre">
         <h2>Brocolis <span data-time>test</span></h2>
         <p>Tous mes sens sont émus d'une volupté douce et pure, comme l'haleine du matin dans cette saison délicieuse. Seul, au milieu d'une contrée qui semble fait exprès pour un coeur tel que mien, j'y goûte à longs traits l'ivresse de la vie. Je suis si heureux, mon ami, si absorbé dans le sentiment de ma paisible existence, que mon art en souffre. Incapable de dessiner le mointre trait, la plus faible ébauche, jamais pourtant je ne fus si grand peintre.</p>
@@ -36,9 +19,9 @@
         <div class="tool">
             <p>Voici une liste non exaustive de mes aliments préférés</p>
             <ul>
-                <?php foreach($tableau as $aliment): ?>
-                    <li><?= $aliment['name'] ?></li>
-                <?php endforeach; ?>
+                {foreach $tableau as $aliment }
+                    <li>{$aliment.name}</li>
+                {/foreach}
             </ul>
         </div>
 
@@ -50,20 +33,5 @@
         <p>que ne puis-je exprimer ce que je sens si vivement! Ces émotions brûlantes, que ne m'est-il donné de les peindre en traits de flamme! Mais - mon ami - les forces me manquent; je succombe sous la grandeur, sous la majesté de ces sublimes merveilles! Tous mes sens sont émus d'une volupté douce et pure, comme l'haleine du matin dans cette saison délicieuse. Seul, au milieu d'une contrée qui semble fait exprès pour un coeur tel que mien, j'y goûte à longs traits l'ivresse de la vie. Je suis si heureux, mon ami, si absorbé dans le sentiment de ma paisible existence, que mon art en souffre. Incapable de dessiner le mointre trait, la plus faible ébauche, jamais pourtant je ne fus si grand peintre. Quand mon vallon chéri se couvre autour de moi d'une légère vapeur; qu'au-dessus de ma tête le soleil de midi darde ses rayons embrasés sur la sombre voûte de mon bois, au fond duquel, comme d'un sanctuaire, il introduit à peine une tremblante lumière; qu'étendu sur le gazon touffu, à la chute d'un ruisseau, je découvre</p>
     </article>
 </main>
-<!-- # Contenu principal -->
+{/block}
 
-<aside id="tool-box" class="hidden">
-    <a href=""><img src="http://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Tools-icon.png"></a>
-</aside>
-
-<!-- Pied de page -->
-<footer>
-    <nav>
-        <a href="/" title="">Accueil</a>
-        <a href="about.php" title="">A propos</a>
-        <a href="contact.php" title="">Contact</a>
-    </nav>
-</footer>
-<!-- # Pied de page -->
-</body>
-</html>
