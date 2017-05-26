@@ -1,0 +1,63 @@
+/* Général */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Century Gothic", sans-serif;
+    font-size:1.6rem;
+    max-width: 1200px;
+    width:80%;
+    margin:0 auto
+}
+p{
+    text-align: justify;
+    padding:4rem
+}
+
+/* classes génériques */
+
+/* structure */
+nav{display:flex}
+nav a{ padding:1rem}
+
+
+/* Section principale */
+
+
+[data-time] {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#tool-box{
+    position:absolute;
+    left: 20px;
+    top:0;
+    height:50px;
+    width:50px;
+}
+
+#tool-box img{
+    height:50px;
+    width:50px;
+}
+
+/* Boite à outil */
+.hover{
+    background-color: #fcf;
+}
+.hidden{
+    opacity:0;
+}
+#tool-box, p{
+    transition:top 1s, background-color 500ms, opacity 500ms;
+}
+
+
+/* responsive */
+@media screen and (max-width: 720px){
+    body{width:90%;}
+    nav{flex-direction:column;}
+}
