@@ -1,10 +1,14 @@
 <?php
 
 /*
- * - Une classe abstraire NE PEUT ÊTRE INSTANCIE
+ * - Une classe abstraite NE PEUT ÊTRE INSTANCIE
+ *
  * - l'autre intérèt d'une classe abstraite c'est de connaitre
- *   les méthode de ses enfants sans forcément les définir
+ *   les méthode de ses enfants sans forcément avoir les définir
+ *   de suite, celà est utile pour le polymorphisme
+ *
  * - une classe abstraite de NE PEUT avoir d'éléments privés
+ *   justement car elle n'est pas instancié
  */
 
 abstract class Mammifere {
@@ -12,9 +16,8 @@ abstract class Mammifere {
 
     protected $taille;
 
-    protected function manger() {
-
-    }
+	// fonction définie, mais non implémenté
+    protected function manger() {}
 
     protected function dormir() {
         $duree_sommeil = 8;
@@ -24,11 +27,13 @@ abstract class Mammifere {
         echo $message;
     }
 
-    // on est obligé d'implémenter la méthode abstraite "marcher"
+    // les classe enfant seront obligé d'implémenter la méthode abstraite "marcher"
     public abstract function marcher($lieu);
 }
 
-
+/**
+ * Cette classe va donc hériter de toutes les propriétés et méthodes de Mammifère
+ **/
 class Homme extends Mammifere {
 
     private static $nb_doigts = 20;
@@ -54,11 +59,13 @@ class Chat extends Mammifere {
 
     }
 
-    /* surchage de la méthode dormir
-     * on conserve le nom de la méthode
-     * on conserve le nombre d'argument (ici zero)
-     * on conserve le type de données en retour (ici void)
-     * on conserve la portée d'une méthode
+    /**    -- surchage de la méthode dormir --
+
+		Règles de la surcharge :
+ 		 conservation du nom de la méthode
+ 	 	 conservation du nombre d'argument (ici zero)
+ 		 conservation du type de données en retour (ici void)
+ 		 conservation e la portée d'une méthode (protected)
      */
     protected function dormir() {
         $duree_sommeil = 14;
@@ -68,6 +75,7 @@ class Chat extends Mammifere {
     public function marcher($lieu){}
 }
 
+// instantiation d'une classe et personnalisation
 $alan = new Homme();
 $alan->marcher("épicerie");
 $alan->nom = "Alan";
@@ -75,17 +83,17 @@ $alan->definir_taille('1.56');
 
 
 /*
-// j'ai parfois tendance à créer une classe Db statique
-Db::getInstance()->query('SELECT * FROM users');
+	// j'ai parfois tendance à créer une classe Db statique
+	Db::getInstance()->query('SELECT * FROM users');
 
-// afin de remplacer l'utilisation actuelle de notre système
-$database = new Database();
-$database->query('SELECT * FROM users');
+	// afin de remplacer l'utilisation actuelle de notre système
+	$database = new Database();
+	$database->query('SELECT * FROM users');
 
-// autre exemple d'utilisation du mode static
-Tools::convert_time("22:12");
-Tools::secure_string("<script>alert('test')</script>");
-Tools::getRandom(6,22);
+	// autre exemple d'utilisation du mode static
+	Tools::convert_time("22:12");
+	Tools::secure_string("<script>alert('test')</script>");
+	Tools::getRandom(6,22);
 
 */
 
