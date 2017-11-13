@@ -1,0 +1,23 @@
+main{
+    background-image:url(img/city_carpet.jpg);
+    width:1388px;
+    height:1000px;
+}
+#car{
+    background-image:url(img/car.png);
+    position:absolute;
+    height:80px;
+    width:80px;
+}
+
+
+
+.left     {background-position:left center;}
+.right    {background-position:right center;}
+.down     {background-position:center bottom;}
+.up       {background-position:center top;}
+
+.leftdown {background-position:left bottom;}
+.lefttop  {background-position:left top;}
+.rightdown{background-position:right bottom;}
+.rightup  {background-position:right top;}

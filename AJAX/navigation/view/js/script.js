@@ -50,6 +50,10 @@ var onClickLink = function(event) {
 // attendre que le DOM soit chargé
 $(function(){
 
+	var loader = $('#loader')
+    $(document).ajaxStart(function(){loader.fadeIn()})
+    $(document).ajaxStop(function(){loader.fadeOut()})
+
 	// affichage d'une page par défaut
     changePage('home');
 
@@ -58,4 +62,6 @@ $(function(){
 
 	// grace à la métode on, on peut mettre un écouteur qui n'existe pas encore dans le DOM (le formailaire)
     $('main').on('submit','form',onSubmitForm);
+
+
 });

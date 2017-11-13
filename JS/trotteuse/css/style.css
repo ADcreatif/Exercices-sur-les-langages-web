@@ -1,0 +1,51 @@
+body{
+	background:black;
+	margin:0;
+	padding:0;
+	text-align:auto;
+}
+
+#clock{
+	background : url('clock.jpg') no-repeat top left;
+	padding : 300px 0 430px 840px;
+}
+
+.hand{
+	background:url('hands.png') no-repeat top left;
+	position:absolute;
+	width:265px;
+	height:265px;
+	rotation:25;
+	width:30px;
+	text-align:center;
+	color:white;
+	transition:tranform .5s
+}
+
+.hand.minutes{
+	background-position:-30 0;
+}
+	
+.hand.hundredth{
+	background-position:-60 0;
+}
+.hand.seconds{
+	background-position:;
+}
+
+nav {
+    margin: 30px auto;
+    float: left;
+}
+nav ul li{display:inline}
+nav button{
+	background:0;
+	border:white 2px solid;
+	border-radius:20px;
+	color:white;
+	padding:15px;
+	margin-right:20px;
+	transition:background-color .5s
+}
+nav button:focus{outline: 0;}
+nav button:hover{background-color:rgbA(256,256,256,.4)}

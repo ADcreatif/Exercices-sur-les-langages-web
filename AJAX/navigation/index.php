@@ -1,9 +1,9 @@
 <?php
 
 if(array_key_exists('page', $_GET)){
-	$template = 'pages/'. $_GET['page'] .'.phtml';
+	$template = 'view/'. $_GET['page'] .'.phtml';
 } else {
-	$template =  'pages/home.phtml';
+	$template =  'view/home.phtml';
 }
 
-include 'pages/layout.php';
+include 'view/layout.php';

@@ -30,6 +30,7 @@ function onMouseEnterLi(){
 		'json'					// ce paramètre informe le callback que la réponse sera au format JSON
 	);
 }
+
 function onMouseOutLi(){
 	tooltip.fadeOut();
 }

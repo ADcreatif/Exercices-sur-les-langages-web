@@ -13,3 +13,14 @@ try{
     $error = $e->getMessage();
     include('error_template.phtml');
 }
+
+
+
+/*
+try{
+	if(motedepasse érroné){
+		throw new DomainException('Mot de passe éroné');
+	}
+} catch(DomainException $exception) {
+	echo $exception->getMessage();
+}*/

@@ -27,7 +27,7 @@ if(array_key_exists('href',$_GET)){
     }
 
     //on affiche le template
-	include "pages/$page.phtml";
+	include "view/$page.phtml";
 }
 
 // gestion du formulaire

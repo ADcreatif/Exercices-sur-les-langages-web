@@ -1,0 +1,25 @@
+.hidden {
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+    margin:0 auto;
+}
+
+td{
+    background-image: url(tileset.jpg);
+    width:200px;
+    height:200px;
+    border:1px solid #888
+}
+
+.left-top{background-position:0 0}
+.middle-top{background-position:-200px 0}
+.right-top{background-position:-400px 0}
+.left-middle{background-position:0  -200px}
+.middle-middle{background-position:-200px  -200px}
+.right-middle{background-position:-400px  -200px}
+.left-bottom{background-position:0 -400px}
+.middle-bottom{background-position:-200px -400px}
+.right-bottom{background-position:-400px -400px}

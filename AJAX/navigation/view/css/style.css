@@ -1,0 +1,33 @@
+
+body{
+	background-color:#222;
+}
+
+header, main, footer{
+	box-sizing:border-box;
+	padding:40px;
+	width:880px;
+	margin:0 auto;
+	background-color:#265;
+}
+
+main{
+	background-color:#fff;
+}
+
+footer{
+	text-align:center;
+	height:150px;
+	box-sizing:border-box;
+}
+
+#loader{
+    position: absolute;
+    margin: -40px;
+    width: 200px;
+    display: block;
+}
+
+.hidden{
+	display:none;
+}
