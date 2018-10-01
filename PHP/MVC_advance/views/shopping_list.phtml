@@ -1,0 +1,32 @@
+<main class="content">
+    <h1>Liste des courses</h1>
+    <?php if (!empty($shopping_list)): ?>
+        <ul>
+            <?php foreach ($shopping_list as $item): ?>
+                <li>
+                    <?= $item['title'] ?>
+                    <a href="<?= HOME ?>shopping_list?delete_item&item_id=<?= $item['id'] ?>">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </li>
+            <?php endforeach ?>
+        </ul>
+    <?php else: ?>
+        <p>Aucun élément dans la liste des courses</p>
+    <?php endif ?>
+
+    <form class="form" method="post" action="<?= HOME ?>shopping_list">
+        <fieldset>
+            <legend>Ajouter un produit</legend>
+            <ul>
+                <li><label>Nom</label><input name="title"></li>
+                <li><label>Quantité</label><input name="quantity" value="1"></li>
+                <li><label>Prix</label><input name="price" value="1"></li>
+                <li><label>Categorie</label><input name="category" value="none"></li>
+                <li>
+                    <button class="flex-right button" name="add_item"><i class="fa fa-plus"></i> Ajouter</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</main>

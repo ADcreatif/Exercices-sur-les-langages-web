@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Salut les Geek</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="<?= VIEWS ?>css/normalize.css">
+    <link rel="stylesheet" href="<?= VIEWS ?>css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        // définition de la constante HOME pour les liens vers l'accueil
+        const HOME = "<?= HOME ?>";
+    </script>
+    <script src="<?= VIEWS ?>js/script.js"></script>
+</head>
+
+<body>
+<header>
+    <nav id="main-nav" class="flex content">
+        <a id="logo" href="<?= HOME ?>"></a>
+        <a href="<?= HOME ?>about">About</a>
+        <a href="<?= HOME ?>shopping_list">Liste de courses</a>
+        <a href="<?= HOME ?>contact">Contact</a>
+        <a id="now-coding" href="https://floobits.com/ADcreatif/Live08/redirect">
+            <img alt="Floobits Status" src="https://floobits.com/ADcreatif/Live08.svg"/>
+        </a>
+    </nav>
+</header>
+<?php include "views/$template.phtml" ?>
+</body>
+</html>

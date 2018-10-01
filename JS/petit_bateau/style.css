@@ -1,0 +1,22 @@
+body {
+    background: url(water.jpg);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+}
+
+#boat {
+    height: 64px;
+    width: 64px;
+    background: url(boat.png);
+    position: absolute;
+}
+
+#boat.top { background-position: 0 -192px }
+
+#boat.right { background-position: 0 -128px }
+
+#boat.bottom { background-position: 0 0 }
+
+#boat.left { background-position: 0 -64px }

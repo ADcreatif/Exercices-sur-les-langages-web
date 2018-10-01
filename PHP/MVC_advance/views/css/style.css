@@ -1,0 +1,255 @@
+/*******************************************************
+
+                       GLOBAL
+
+ *******************************************************/
+
+* { box-sizing: border-box; }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #aaa;
+    font-family: 'Roboto', verdana, helvetica, sans-serif;
+}
+
+a {
+    transition: color 500ms;
+    color: #F52;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, #logo {
+    color: #555;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 { color: #DDD }
+
+h3 { color: #999 }
+
+/*******************************************************
+
+                        GENERIC
+
+ *******************************************************/
+.content {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row {
+    flex-direction: column;
+}
+
+.flex-row > * + * {
+    margin-top: 1rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap > * {
+    white-space: nowrap;
+}
+
+.text-right { text-align: right; }
+
+.flex-right, .flex-end { justify-content: flex-end; }
+
+.float-right { float: right; }
+
+.text-left { text-align: left; }
+
+.flex-left, .flex-start { justify-content: flex-start; }
+
+.float-left { float: left; }
+
+.hidden { display: none }
+
+/*******************************************************
+
+                        HEADER
+
+ *******************************************************/
+#main-nav {
+    margin-top: 2rem;
+}
+
+#main-nav > * {
+    text-align: center;
+    line-height: 4.1rem
+}
+
+#main-nav > * + * {
+    margin-left: 3rem;
+}
+
+#main-nav > *:after {
+    transition: width 500ms ease;
+    content: "";
+    border-bottom: 1px solid #F52;;
+    display: block;
+    width: 0;
+    margin: 0 auto;
+}
+
+#main-nav > *:hover::after {
+    width: 100%;
+}
+
+#main-nav strong { font-weight: normal; }
+
+#main-nav i {
+    display: block;
+    font-size: 2rem
+}
+
+#main-nav .sub-menu {
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2px;
+}
+
+#main-nav .sub-menu li {
+    width: 100%;
+    display: block;
+}
+
+#main-nav > *:hover .sub-menu {
+    display: flex;
+}
+
+#logo {
+    float: left;
+}
+
+#logo strong {
+    font-size: 5rem;
+}
+
+#logo::after {
+    content: none;
+}
+
+/*******************************************************
+
+                        TABLES
+
+ *******************************************************/
+table {
+    width: 100%
+}
+
+th { text-align: left; }
+
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 1rem
+}
+
+#now-coding {
+    margin-left: 20px;
+}
+
+#logo {
+    display: inline-block;
+    background: url(../img/logo.png) no-repeat;
+    width: 70px;
+    height: 80px;
+    background-size: contain;
+}
+
+/*******************************************************
+
+                        FORMS
+
+ *******************************************************/
+.form {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.form fieldset {
+    padding: 2rem;
+    border: 2px solid #ddd
+}
+
+.form legend { padding: 0 1rem }
+
+.form ul { list-style-type: none; padding: 0; margin: 0 }
+
+.form li { line-height: 3rem; display: flex; }
+
+.form li + li { margin-top: 1rem }
+
+.form li label {
+    display: inline-block;
+    font-weight: bolder;
+    width: 30%;
+    text-align: right;
+    padding-right: 3rem;
+}
+
+.form input,
+.form textarea,
+.form button:not(.button) {
+    width: 70%;
+    padding: .5rem 1rem;
+    border: #aaa;
+    background-color: #eee
+}
+
+.form input:focus,
+.form textarea:focus,
+.form button:focus {
+    outline: none
+}
+
+.form .button {
+    width: auto;
+}
+
+/*******************************************************
+
+                        BUTTONS
+
+ *******************************************************/
+.button {
+    background-color: #2A3;
+    padding: .5rem 3rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.button:hover {
+    background-color: #181;
+}

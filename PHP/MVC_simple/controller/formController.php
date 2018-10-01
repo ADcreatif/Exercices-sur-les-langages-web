@@ -1,7 +1,7 @@
 <?php
 
 // on vérifie que le formulaire est envoyé
-if(array_key_exists('login', $_POST)){
+if (array_key_exists('login', $_POST)) {
 
     // on extrait les variables du formulaire
     extract($_POST);
@@ -9,11 +9,11 @@ if(array_key_exists('login', $_POST)){
     // $password = 'Vincent';
 
     // enfin on vérifie que le mot de passe est correct
-    try{
+    try {
         $password = new Password();
         $password->checkPassword($pseudo, $pass);
 
-    } catch(DomainException $error){
+    } catch (DomainException $error) {
         $errors = $error->getMessage();
     }
 }

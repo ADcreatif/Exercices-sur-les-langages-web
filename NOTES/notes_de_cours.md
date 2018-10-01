@@ -74,10 +74,10 @@ il existe 4 sélecteurs jquery
 - **l'encapsulation** : regroupement et sécurisation de propriétés au sein d'une même méthode ``get_width(){return $this->width}``
 - **scope, portée ou niveau de visibilité** (public, protected, private)
 - **l'héritage** : donne accès à des propriétés et méthodes du parent
-- **la composition** : composer un objet avec un autre objet et ajoute des propriétés optionelle à un object
 - **la surchage** : extension d'une méthode en respectant son nom, sa portée, ses arguments et le type de la valeur de retour
-- **le polymorphisme** : même méthode pour différent types
 - **l'abstraction**: pas de membres privés, pas d'instance possible, peut déclarer des méthodes abstaites,
+- **le polymorphisme** : même méthode pour différent types
+- **la composition** : composer un objet avec un autre objet et ajoute des propriétés optionelle à un object
 
 
 ## SQL ##
