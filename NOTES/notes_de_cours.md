@@ -12,13 +12,14 @@
     --> Remontez la ligne précédente vous avez oublié de fermer une } ) ] ou d'ajouter un ;
 
 
+
 ### jQuery
 il existe 4 sélecteurs jquery
 
- - ``$('.generic-form input')``                     _identification par sélécteur css_
+ - ``$('.generic-form input')``                     _identification par sélecteur css_
  - ``$(document)``                                  _identification d'un élément du DOM_
  - ``$(function(){ /* le DOM est chargé */ })``     _s'execute quand le DOM est chargé ('DOMContentLoaded' en JS natif)_
- - ``$('<li>)``                                     _crée une balise qu'on insèrera plus tard dans le DOM avec .append()_
+ - ``$('<li>')``                                     _crée une balise qu'on insèrera plus tard dans le DOM avec .append()_
 
 
 ## php
@@ -38,14 +39,14 @@ il existe 4 sélecteurs jquery
 
 ## Différences JS / PHP
 
-|                      |         PHP        |          JS         |
-|----------------------|--------------------|---------------------|
-|  s'éxécute sur       | serveur            |   client HTML       |
-|  les variables       |    $               |       var           |
-|  la concaténation    |    .               |        +            |
-|  tableau associatifs |   ['key' => val]   |        {key : val}  |
-|  le ";"              |  obligatoire       |       optionnel     |
-|  guillemet simple    |  "$prenom"         |        ''           |
+|                            |         PHP         |          JS         |
+|----------------------------|---------------------|---------------------|
+|  s'éxécute sur             |      serveur        |   client HTML       |
+|  déclaration des variables |         $           |       var           |
+|  la concaténation          |         .           |        +            |
+|  tableau associatifs       |  ['key' => value]   |   {key : value}     |
+|  le point virgule ";"      |     obligatoire     |       optionnel     |
+|  guillemet simple / double |     "$prenom"       |        ''           |
 
 ### entre .php / .phtml ###
 
@@ -57,9 +58,10 @@ il existe 4 sélecteurs jquery
 
 ### les rêgles du .phtml ####
 
- - on indente le php comme le html
- - a chaque ligne on réouvre et on referme le <?php  ?>
- - écriture simplifié des instructions ``<?php if(): ?> <?php endif ?>``  ou encore ``<?= 'blablabla'  ?>`` à la place de ``<?php echo 'blablabla' ?>``)
+- ouverture/fermeture du php à chaque lignes
+- indentation du code comme du html
+- syntaxe alternative pour les echo <?= "salut" ?>  <=> <?php echo "salut" ?>
+- syntaxe alternative pour les autres structures foreach(): (...) endforeach;
 
 
 ## Astuces Déboguage ##
@@ -72,12 +74,12 @@ il existe 4 sélecteurs jquery
 [https://fr.wikipedia.org/wiki/Patron_de_conception]
 
 - **l'encapsulation** : regroupement et sécurisation de propriétés au sein d'une même méthode ``get_width(){return $this->width}``
-- **scope, portée ou niveau de visibilité** (public, protected, private)
-- **l'héritage** : donne accès à des propriétés et méthodes du parent
-- **la surchage** : extension d'une méthode en respectant son nom, sa portée, ses arguments et le type de la valeur de retour
-- **l'abstraction**: pas de membres privés, pas d'instance possible, peut déclarer des méthodes abstaites,
-- **le polymorphisme** : même méthode pour différent types
 - **la composition** : composer un objet avec un autre objet et ajoute des propriétés optionelle à un object
+- **scope, portée ou niveau de visibilité** (public, protected, private)
+- **l'héritage** : donne accès à des propriétés et méthodes du parent, et permet leur extention
+- **le polymorphisme** : même méthode pour différent types de classes
+- **l'abstraction**: pas de membres privés, pas d'instance possible, peut déclarer des méthodes abstaites,
+- **la surchage** : extension d'une méthode en respectant son nom, sa portée, ses arguments et le type de la valeur de retour
 
 
 ## SQL ##
@@ -87,5 +89,15 @@ il existe 4 sélecteurs jquery
 - unique - doit être unique dans la table
 - primaire - doit être unique, un seul par table, autoincrémentable
 - foreign (etrangère) - liée avec une clé dans une autre table. Elle doit être de même type que l'index associé (int par ex)
+
+### ordre d'execution d'un select
+    5- SELECT / AS
+    1- FROM 
+    2- JOIN / ON
+    3- WHERE / IN / BETWEEN / LIKE / NOT / OR / AND ...
+    4- GROUP BY
+    6- HAVING
+    7- ORDER BY
+    8- LIMIT
 
 
