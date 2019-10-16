@@ -10,7 +10,7 @@
     - des langages différents dans des fichiers séparés
     - un maximum de commentaires
 
-3. Création d'un site
+3. un beau site HTML
     1. faire la maquette
     2. créer les contenus au Kilomètre
     3. ajouter les balises en respectant la sémantique

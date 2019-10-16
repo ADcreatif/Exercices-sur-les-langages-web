@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Alan's list</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/script.js"></script>
+	</head>
+	<body>
+    <header class="container">
+        <h1>Tester l'ajax</h1>
+        <aside id="cart" class="cart block">
+            <p class="medium-title">Votre panier</p>
+            <div class="item-list">
+                <p>Vous n'avez aucun produit dans votre panier</p>
+            </div>
+        </aside>
+    </header>
+    <section class="container block">
+        <h1>Alan's list</h1>
+        <p>Roll over any product to get more informations</p>
+			<?php foreach($products as $id => $product): ?>
+                <article class="product" data-id="<?= $id ?>">
+					<img src="img/<?=$product['picture']?>">
+					<h2><?=$product['name'] ?></h2>
+                    <p class="price"><?= number_format($product['price'], 2) ?>€</p>
+                    <a href="#" data-id="<?= $product['id'] ?>" class="add-to-cart btn btn-important">Ajouter au
+                        panier</a>
+                </article>
+			<?php endforeach ?>
+    </section>
+    <div id="tooltip" class="hidden">
+			<h3></h3>
+			<p></p>
+			<ul></ul>
+		</div>
+	</body>
+</html>

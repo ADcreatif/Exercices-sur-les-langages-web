@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', verdana, helvetica, sans-serif;
+	color:#333;
+	line-height:1.8;
+}
+
+h1 {
+	flex-basis: 100%;
+}
+
+p {
+	text-align: justify;
+	margin: 5px;
+	flex-basis: 100%;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto 20px;
+	max-width: 800px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.medium-title {
+	font-size: 120%;
+}
+
+.block {
+	padding: 20px;
+	background-color: #ddd;
+}
+
+.hidden {
+	display: none
+}
+
+/* --------------------------- BUTTONS --------------------------- */
+.btn {
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn-important {
+	background-color: #ff7600;
+	color: #fffffc;
+}
+
+.btn-information {
+	background-color: lightblue;
+	color: white;
+}
+
+
+/* ----------------------------- CART ----------------------------- */
+.cart {
+	width: 310px;
+	margin-left: auto;
+}
+
+/* ---------------------------- TOOLTIP --------------------------- */
+#tooltip{
+	padding:5px;
+	position:absolute;
+	background-color:white;
+	border:1px solid #999;
+	width:250px;
+	border-radius:5px;
+	box-shadow:10px 10px 5px rgba(0,0,0,.5);
+}
+
+/* ---------------------------- PRODUCTS --------------------------- */
+.product {
+	display:flex;
+	flex-direction:column;
+	width:240px;
+	box-sizing:border-box;
+
+	background-color:white;
+	margin-bottom:30px;
+	padding:10px;
+	text-align:center;
+}
+
+.product img {
+	max-height:220px;
+	max-width:100%;
+}
+
+.product h2 {
+	font-size:130%;
+	margin:0;
+}
+

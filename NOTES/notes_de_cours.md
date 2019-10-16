@@ -1,8 +1,8 @@
-## html
 
+## erreurs 
+### html
     --> Si on remarque que les balises prennent la forme caractéristique en escalier c'est qu'on a oublié de fermer une balise
-
-## javascript
+### javascript
 
     Uncaught TypeError: Cannot read property '260' of undefined
     --> Il y a de très grandes chances que vous n'ayez pas défini l'object ou le tableau dont l'index est '260'
@@ -11,19 +11,9 @@
     Unexpected token 'balblalbalbal'
     --> Remontez la ligne précédente vous avez oublié de fermer une } ) ] ou d'ajouter un ;
 
-
-
 ### jQuery
-il existe 4 sélecteurs jquery
 
- - ``$('.generic-form input')``                     _identification par sélecteur css_
- - ``$(document)``                                  _identification d'un élément du DOM_
- - ``$(function(){ /* le DOM est chargé */ })``     _s'execute quand le DOM est chargé ('DOMContentLoaded' en JS natif)_
- - ``$('<li>')``                                     _crée une balise qu'on insèrera plus tard dans le DOM avec .append()_
-
-
-## php
-
+### PHP
     syntax error, unexpected 'quelquechose'
     --> vous avez oublié un ";" à la ligne précédente
 
@@ -37,7 +27,32 @@ il existe 4 sélecteurs jquery
     --> n'oubliez pas le '$' devant les variables
 
 
-## Différences JS / PHP
+### SQL 
+	Integrity constraint violation: 1062 Duplicata du champ
+	-->
+	
+
+    "non aggregated" ...
+    --> vous essayez d'afficher une colonne qui n'est pas regrouppé, et mysql ne sais pas quel résultat choisir. Ajouter cette colonne au GROUP BY ou supprimez la du SELECT
+	
+	"ambiguous" ...
+	-->
+
+
+## jQuery
+il existe 4 sélecteurs jquery
+
+ - ``$('.generic-form input')``                     _identification par sélecteur css_
+ - ``$(document)``                                  _identification d'un élément du DOM_ (convertir un élément en jQuery)
+ - ``$(function(){ /* le DOM est chargé */ })``     _s'execute quand le DOM est chargé ('DOMContentLoaded' en JS natif)_
+ - ``$('<li>')``                                     _crée une balise qu'on insèrera plus tard dans le DOM avec .append()_
+
+
+## php
+
+
+
+### Différences JS / PHP
 
 |                            |         PHP         |          JS         |
 |----------------------------|---------------------|---------------------|
@@ -74,8 +89,8 @@ il existe 4 sélecteurs jquery
 [https://fr.wikipedia.org/wiki/Patron_de_conception]
 
 - **l'encapsulation** : regroupement et sécurisation de propriétés au sein d'une même méthode ``get_width(){return $this->width}``
-- **la composition** : composer un objet avec un autre objet et ajoute des propriétés optionelle à un object
-- **scope, portée ou niveau de visibilité** (public, protected, private)
+- **la composition** : c'est une classe composée d'une autre instance de classe. Donnant accès à ses propriétés et méthodes
+ - **scope, portée ou niveau de visibilité** (public, protected, private), gère le niveau d'accès des propriétés et méthodes
 - **l'héritage** : donne accès à des propriétés et méthodes du parent, et permet leur extention
 - **le polymorphisme** : même méthode pour différent types de classes
 - **l'abstraction**: pas de membres privés, pas d'instance possible, peut déclarer des méthodes abstaites,
@@ -100,4 +115,4 @@ il existe 4 sélecteurs jquery
     7- ORDER BY
     8- LIMIT
 
-
+## GIT
