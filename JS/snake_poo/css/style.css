@@ -1,0 +1,288 @@
+/*******************************************************
+
+                       COLORS
+
+ *******************************************************/
+* {
+    box-sizing: border-box;
+}
+
+
+.color-primary-0 {
+    color: #226666
+}
+
+/* GREEN */
+.color-primary-1 {
+    color: #669999
+}
+
+.color-primary-2 {
+    color: #407F7F
+}
+
+.color-primary-3 {
+    color: #0D4D4D
+}
+
+.color-primary-4 {
+    color: #003333
+}
+
+.color-secondary-1-0 {
+    color: #2E4272
+}
+
+/* BLUE */
+.color-secondary-1-1 {
+    color: #7887AB
+}
+
+.color-secondary-1-2 {
+    color: #4F628E
+}
+
+.color-secondary-1-3 {
+    color: #162955
+}
+
+.color-secondary-1-4 {
+    color: #061539
+}
+
+.color-secondary-2-0 {
+    color: #2D882D
+}
+
+/* LIGHT GREEN */
+.color-secondary-2-1 {
+    color: #88CC88
+}
+
+.color-secondary-2-2 {
+    color: #55AA55
+}
+
+.color-secondary-2-3 {
+    color: #116611
+}
+
+.color-secondary-2-4 {
+    color: #004400
+}
+
+body {
+    background-color: #226666
+}
+
+h1, h2, h3, h4, #logo {
+    color: #003333
+}
+
+.snake {
+    background-color: #116611;
+    border-color: #116611;
+}
+
+.snake.head {
+    background-color: #88CC88;
+    border-color: #88CC88
+
+}
+
+table {
+    background-color: #7887AB
+}
+
+/*******************************************************
+
+                       GLOBAL
+
+ *******************************************************/
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', verdana, helvetica, sans-serif;
+}
+
+a {
+    transition: color 500ms;
+    color: #F52;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #222
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, #logo {
+    font-family: 'Roboto', verdana, helvetica, sans-serif;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.info {
+    background: #bbf;
+    padding: 5px 10px;
+    border: 1px solid #aaf;
+}
+
+/*******************************************************
+
+                        GENERIC
+
+ *******************************************************/
+
+.content {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row {
+    flex-direction: column;
+}
+
+.flex-row > * + * {
+    margin-top: 1rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap > * {
+    white-space: nowrap;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-right, .flex-end {
+    justify-content: flex-end;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.flex-left, .flex-start {
+    justify-content: flex-start;
+}
+
+.float-left {
+    float: left;
+}
+
+.full {
+    width: 100%
+}
+
+.hidden {
+    display: none
+}
+
+.price {
+    text-align: right
+}
+
+/*******************************************************
+
+                        HEADER
+
+ *******************************************************/
+
+/*******************************************************
+
+                        TABLES
+
+ *******************************************************/
+table {
+    /* width: 100% */
+}
+
+th {
+    text-align: left;
+}
+
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 1rem
+}
+
+td {
+    width: 25px;
+    height: 25px;
+    border-width: 1px;
+}
+
+
+/*******************************************************
+
+                        BUTTONS
+
+ *******************************************************/
+.button {
+    background-color: #2A3;
+    padding: .5rem 3rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline-color: #2ad13f;
+}
+
+.button:hover {
+    background-color: #181;
+    outline-color: #2ad13f;
+}
+
+
+#tasks_list li:hover .description {
+    display: block;
+}
+
+.tooltip {
+    padding: 1rem;
+    border: 1px solid #fecece;
+    background-color: #dbffed;
+    border-radius: 10px;
+    margin: 1rem 3rem;
+    position: absolute;
+}
+
+#board table {
+    margin: 0 auto;
+}
+
+.apple:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('../apple.png') no-repeat 50%;
+    background-size: contain;
+    display: block;
+}
+

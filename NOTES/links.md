@@ -64,3 +64,10 @@
 - LA fiche récap html/css/js : https://htmlcheatsheet.com/css/
 - thème wordpress bootstrap : [understrap](https://github.com/holger1411/understrap)
 - mon gitHub [ADcreatif](https://github.com/ADcreatif)
+- free templates html [html5up](https://html5up.net/)
+
+
+## AVANCE-MASTER
+mockapi pour générer des données json : [mockapi](https://www.mockapi.io/)
+pour convertir son json en typescript : [JSONtoTS](http://www.jsontots.com/)
+tutos video pour angular (front) : [firebase](https://www.youtube.com/channel/UCP4bf6IHJJQehibu6ai__cg)
