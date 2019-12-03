@@ -19,14 +19,14 @@ class Game {
         this.timer = null;
         this.pause = false;
 
-        // écouteurs d'évênements
+        // event listeners
         $('#start').click(this.onClickStart.bind(this));
         $(document).keydown(this.onKeyDown.bind(this))
 
     }
 
     gameLoop() {
-        // on déplace le serpent
+        // moving snake
         this.snake.move();
 
         switch (this.checkStatus()) {
@@ -51,7 +51,7 @@ class Game {
     }
 
     checkStatus() {
-        // on récupère la cellule occupé par le serpent
+        // get cells ocupied by the snake
         let cellID = this.board.getCellByCood(this.snake.x, this.snake.y);
 
         if (this.board.haveApple(cellID)) {

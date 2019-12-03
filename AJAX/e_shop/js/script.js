@@ -1,6 +1,6 @@
 'use strict';
 /* global $ */
-var tooltip;
+let tooltip;
 
 /**
  * Once we caught back the product informations from php we can display tooltip
@@ -24,7 +24,7 @@ function onAjaxMouseEnterProduct(datas) {
 function onMouseEnterProduct() {
 
     // getting product id from
-    var id = $(this).data('id');
+    let id = $(this).data('id');
 
     // sending product to php with ajax ($_GET['id'] = 2)
     $.get('', 'ajax&action=get&id=' + id, onAjaxMouseEnterProduct, 'json');
@@ -39,10 +39,10 @@ function onMouseOutProduct() {
 
 /////////////////////////////////////// ADD TO CART ////////////////////////////////
 
-var onAjaxAddToCart = function (cart) {
-    var ul, name, quantity, price;
+let onAjaxAddToCart = function (cart) {
+    let ul, name, quantity, price;
 
-    // on sait que le format de retour est en "json"
+    // we already know the return format is "json"
     ul = $('<ul>');
 
     $(cart).each(function (index, product) {
@@ -73,31 +73,31 @@ var onAjaxAddToCart = function (cart) {
     $('.item-list').empty().append(ul);
 };
 
-var onClickAddToCart = function (event) {
-    // pour éviter le renvoi en haut de page (à cause de href="#")
+let onClickAddToCart = function (event) {
+    // disable the link behaviour, (go to top of the page)
     event.preventDefault();
 
-    // on récupère l'id du produit sur lequel on a cliqué
+    // getting clicked item's ID
     // this --> event.currentTarget
-    // les attribut data en JS natif : this.dataset.bidule
-    var id = $(this).data('id');
+    // equivalent in native JS : this.dataset.bidule
+    let id = $(this).data('id');
 
     // $.getJSON( url, data, success ] )
     $.getJSON('', "ajax&action=add&id=" + id, onAjaxAddToCart);
 };
 
-var onClickItemList = function (event) {
-    // on désactive le clic sur le lien
+let onClickItemList = function (event) {
+    // disabling link click effect
     event.preventDefault();
 
-    // this est le lien qui à été cliqué
-    var id = $(this).data('id');
+    // "this" represents the clicked link
+    let id = $(this).data('id');
 
     // php/ajax.php?action=remove&productid=49
     $.getJSON(this.href, null, onAjaxAddToCart)
 
     /*
-        c'est deux écritures sont exactement les mêmes que les précédentes
+        exactly the same as previous line
         $.getJSON('php/ajax.php', {action:'remove',productid:49}, onAjaxAddToCart)
         $.getJSON('php/ajax.php?action:remove&productid=49', null, onAjaxAddToCart)
      */
@@ -112,7 +112,7 @@ $(function () {
     tooltip = $('#tooltip');
     $('.product').mouseenter(onMouseEnterProduct).mouseout(onMouseOutProduct);
 
-    // positionnement du tooltip a côté de la souris
+    // positioning the tooltip next to the mouse
     $(window).mousemove(function (event) {
         tooltip.css('left', event.clientX + 20);
         tooltip.css('top', event.clientY);
@@ -130,6 +130,4 @@ $(function () {
         enfant, la balise "<a>" : https://api.jquery.com/on/#on-events-selector-data-handler
      */
     $('.item-list').on('click', 'a', onClickItemList);
-
-
 });

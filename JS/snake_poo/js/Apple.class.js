@@ -12,13 +12,12 @@ class Apple {
 
     generateApple() {
 
-        // on cherche une cellule aléatoire jusqu'a ce que celle çi ne soit
-        // plus occupé par la queue du serpent (indexOf différent de -1)
+        // Looking for a random cell no ocupied by snake (!= -1)
         do {
             this.cellID = this.getRandomCell();
         } while (this.snake.queue.indexOf(this.cellID) !== -1);
 
-        // pour éviter les doublons de pommes on les effaces toutes avant d'en créer une nouvelle
+        // Clearing board before adding apple
         $('.apple').removeClass('apple');
         $('#' + this.cellID).addClass('apple');
     }
