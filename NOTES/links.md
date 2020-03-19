@@ -48,10 +48,11 @@
 ## EXOS
 - [les QCM de Alsacréation](https://www.alsacreations.com/quiz/)
 - [Exercices et corrigés de la 3w Academy](https://e.3wa.fr/my/)
-- https://xhtml.developpez.com/quizz/
-- https://css.developpez.com/quizz/
-- https://javascript.developpez.com/quizz/
-- http://odyssey.sdlm.be/
+- [Quizz w3schools](https://www.w3schools.com/html/html_quiz.asp)
+- (https://xhtml.developpez.com/quizz/)
+- (https://css.developpez.com/quizz/)
+- (https://javascript.developpez.com/quizz/)
+- (http://odyssey.sdlm.be/)
 
 ## CSS / INTEGRATION
 - [sélecteurs css à connaitre](https://code.tutsplus.com/fr/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
