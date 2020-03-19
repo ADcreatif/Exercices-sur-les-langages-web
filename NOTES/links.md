@@ -71,6 +71,12 @@
 - free templates html [html5up](https://html5up.net/)
 - templates cdn lègers [bootswatch](https://bootswatch.com/)
 
+## LIVRES & E-BOOK
+ - Marijn Haverbeke, [Eloquent JavaScript](https://eloquentjavascript.net/)
+ - Axel Rauschmayer, [Exploring JS](https://exploringjs.com)
+ - développer un site dans les 5 langages [lien amazon](https://www.amazon.fr/D%C3%A9velopper-Mysql-Javascript-Jquery-HTML5/dp/2893775764/ref=pd_aw_sbs_14_4/262-8150786-3104706?_encoding=UTF8&pd_rd_i=2893775764&pd_rd_r=392972bd-4e11-4db4-b92b-0a6aeb5dc11a&pd_rd_w=8HFSV&pd_rd_wg=NaarL&pf_rd_p=ebeaa637-637a-4348-9a0b-353d8b27d02a&pf_rd_r=3VS4S54FZAH36SMVH33R&psc=1&refRID=3VS4S54FZAH36SMVH33R) 
+ - Web Design with HTML, CSS, JavaScript and jQuery [lien amazon](https://www.amazon.fr/Web-Design-HTML-JavaScript-jQuery/dp/1118907442/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=html&qid=1579545657&sr=8-2)
+
 ## AVANCE-MASTER
 - mockapi pour générer des données json : [mockapi](https://www.mockapi.io/)
 - pour convertir son json en typescript : [JSONtoTS](http://www.jsontots.com/)
