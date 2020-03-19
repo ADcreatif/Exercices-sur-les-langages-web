@@ -1,0 +1,11 @@
+Pour la récursivité j'utilise les palindromes. En gros déterminer si un mot est un palindrome. On compare à chaque passage dans la fonction la première et la dernière lettre et on rappelle la fonction avec le nouveau mot tronqué.
+ÉNONCÉ :
+#########
+Une chaîne de caractère est un palindrome si elle a moins de deux caractères ou si son premier et son dernier caractère sont identiques et la sous chaîne obtenue en les retirant est elle aussi un palindrome.
+    
+    Exemple 1 : abihefehiba. – Exemple 2 : selles  ;)
+    Ecrivez une fonction récursive qui vérifie si un mot est un palindrome. Essayez de vous documenter sur les fonctions récursives pour en comprendre le principe avant de coder. Vous devriez poser votre algorithme sur papier avant de coder !
+    Indications :
+    string substr ( string $string , int $start [, int $length ] ) => retourne un segment de chaîne de $start à $length. Exemple premier caractère «  substr($chaine,0,1) ; »
+    int strlen($chaine) => retourne la taille d’une chaîne.
+    le nombre de lettre dans l’alphabet et de 26 (13*2=26

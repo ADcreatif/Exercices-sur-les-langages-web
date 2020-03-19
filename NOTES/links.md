@@ -6,7 +6,7 @@
 - spécificité et pondération des sélecteurs [css](https://developer.mozilla.org/fr/docs/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage)
 - [la doc ultime](https://devdocs.io/)
 - [les patrons de conception](https://fr.wikipedia.org/wiki/Patron_de_conception)
-
+- 10 bonnes pratiques en JS [delicious insights](https://delicious-insights.com/fr/articles/dix-bonnes-pratiques-javascript/)
 
 
 ## TUTOS
@@ -33,7 +33,7 @@
 - vérifier les compatibilités selon navigateur : [canIuse](http://caniuse.com/)
 - générer sa palette de couleurs : [paleton](http://paletton.com/)
 - permet de faire des mockup : [Precursor App](https://precursorapp.com/)
-- Diagrammes UML pour préparer ses bases de données : [draw.io]https://www.draw.io/ [gliffy](https://www.gliffy.com/) [lucidchart](https://www.lucidchart.com/)
+- Diagrammes UML : [draw.io]https://www.draw.io/ [gliffy](https://www.gliffy.com/) [lucidchart](https://www.lucidchart.com/)
 - Générer du faux texte [blind text générator](http://www.blindtextgenerator.com/fr)
 - Convertir vos images en base42 (_data:image/jpeg;base64,XXX_) : [par ici](http://b64.io/)
 - Dessin vectoriel : [inkscape.org](https://inkscape.org/fr/)
@@ -42,32 +42,36 @@
 - minifiez vos scripts js [JSCompress - The JavaScript Compression Tool](https://jscompress.com/)
 - optimisez le chargement de votre site [PageSpeed Insight](https://developers.google.com/speed/pagespeed/insights/)
 - une très bonne classe pour envoyer les e-mail : [phpMailer](https://github.com/PHPMailer/PHPMailer)
+- images de remplissage random : [lorempixum](http://lorempixel.com/)
 
 
 ## EXOS
 - [les QCM de Alsacréation](https://www.alsacreations.com/quiz/)
 - [Exercices et corrigés de la 3w Academy](https://e.3wa.fr/my/)
 - https://xhtml.developpez.com/quizz/
+- https://css.developpez.com/quizz/
 - https://javascript.developpez.com/quizz/
 - http://odyssey.sdlm.be/
 
-## CSS
+## CSS / INTEGRATION
 - [sélecteurs css à connaitre](https://code.tutsplus.com/fr/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 - [froggy](https://flexboxfroggy.com/#fr)
 - sélecteurs css : [à table!](https://flukeout.github.io/)
 - jeu flexbox [défendez votre base](http://www.flexboxdefense.com/)
 - flexbox [construisez un dé](https://la-cascade.io/flexbox-un-coup-de-des/)
 - spécificité et pondération des sélecteurs [css](https://developer.mozilla.org/fr/docs/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage)
-
+- images de remplacement [loremPicsum](https://picsum.photos/200/300)
+- un CSS de base avec les bonnes pratiques : [KNACSS](https://www.knacss.com/doc.html#intro)
 
 ## RESSOURCES A TELECHARGER
 - LA fiche récap html/css/js : https://htmlcheatsheet.com/css/
 - thème wordpress bootstrap : [understrap](https://github.com/holger1411/understrap)
 - mon gitHub [ADcreatif](https://github.com/ADcreatif)
 - free templates html [html5up](https://html5up.net/)
-
+- templates cdn lègers [bootswatch](https://bootswatch.com/)
 
 ## AVANCE-MASTER
-mockapi pour générer des données json : [mockapi](https://www.mockapi.io/)
-pour convertir son json en typescript : [JSONtoTS](http://www.jsontots.com/)
-tutos video pour angular (front) : [firebase](https://www.youtube.com/channel/UCP4bf6IHJJQehibu6ai__cg)
+- mockapi pour générer des données json : [mockapi](https://www.mockapi.io/)
+- pour convertir son json en typescript : [JSONtoTS](http://www.jsontots.com/)
+- tutos video pour angular (front) : [firebase](https://www.youtube.com/channel/UCP4bf6IHJJQehibu6ai__cg)
+- typescript en 5Minutes (https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
